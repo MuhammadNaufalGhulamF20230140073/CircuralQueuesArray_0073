@@ -64,3 +64,19 @@ public:
         int FRONT_position = FRONT;
         int REAR_position = REAR;
 
+        // cek apakah antrian kosong
+        if(FRONT == -1){
+            cout <<"Queue is Empty\n";
+            return;
+        }
+
+        cout <<"\nElement is Queue Are. . .\n";
+
+        //jika front position < rear pisiion iterasi front hingga rear
+        if(FRONT_position <= REAR_position){
+            while (FRONT_position <= REAR_position){
+                cout << queue_array[FRONT_position] << "  ";
+                FRONT_position++;
+            }
+            cout << endl;
+        }
