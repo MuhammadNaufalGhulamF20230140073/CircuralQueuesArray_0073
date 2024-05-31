@@ -38,3 +38,9 @@ public:
         queue_array[REAR] = num;
     }
 
+    void remove(){
+        //cekapakah antrian kosong
+        if (FRONT == -1){
+            cout << "Queue underflow\n";
+            return;
+        }
